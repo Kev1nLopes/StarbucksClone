@@ -5,14 +5,49 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
-header .line{
-    background-color: #117050;
-    height: 10px;
-}
+
 .container{
     width: 1140px;
     margin: auto;
 
+}
+.bar{
+    width: 168px;
+    height: 22px;
+    background-color: #117050;
+}
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #454545;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+
+}
+.button:hover{
+    color: white;
+    background-color: #454545;
+}
+h1{
+    font-family: 'Oswald', sans-serif; 
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 30px;
+   
+}
+h2{
+    font-family: 'Oswald', sans-serif; 
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    margin: 20px 0;
+}
+.header .line{
+    background-color: #117050;
+    height: 10px;
 }
 .header--area{
     display: flex;
@@ -64,15 +99,7 @@ header .line{
     padding-top: 90px;
     padding-bottom: 90px;
 }
-.banner h1{
-    font-family: 'Oswald', sans-serif; 
-    font-weight: bold;
-    font-size: 90px;
-    line-height: 100px;
-    margin: 0;
-    margin-bottom: 30px;
-   
-}
+
 .banner--images{
     margin-top: 60px;
 }
@@ -82,4 +109,96 @@ header .line{
     border: 4px solid #117050;
     border-radius: 50%;
     margin-right: 40px;
+}
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+.area1--content{
+    padding:80px;
+}
+.area1--quote{
+    margin-bottom: 30px;
+    
+}
+.area1--img1{
+    background-image: url('../img/f2.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/span 1;
+    height: 350px;
+}
+.area1--img2{
+    background-image: url('../img/f1.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/ span 2;
+    grid-row: 1 / span 2;
+}
+.area1--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.area2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+.area2--content{
+    padding:80px;
+}
+
+.area2--img1{
+    background-image: url('../img/f4.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column: 2/span 2;
+    height: 450px;
+}
+.area2--img2{
+    background-image: url('../img/f3.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/ span 1;
+    grid-row: 1 / span 2;
+}
+.area2--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area3--content{
+    padding: 190px 80px;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-position: left;
+}
+.area3--text{
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+.area3--img1{
+    background-image: url('../img/f5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.area4{
+   display: grid;
+   grid-template-columns: 450px 1fr;
+    
+}
+.area4--content{
+    padding: 150px 80px;
+}
+.area4--text{
+    margin-bottom: 60px;
+    line-height:25px ;
+}
+.area4--img1{
+    background-image: url('../img/bg3.jpg');
+    background-position: left;
 }
